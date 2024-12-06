@@ -1,0 +1,69 @@
+.header{
+  display:  flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0,0.6);
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(180, 125, 52);
+}
+.main{
+  display: flex;
+  justify-content:center;
+  gap: 10px;
+  align-items: center;
+  padding: 60px;
+}
+.img-emoji{
+  width:10%;
+}
+
+
+
+/* Cursor */
+.cursor{
+    position: relative;
+    width: 24em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 2vw;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    color: rgb(214, 133, 41); 
+    font-weight: 900;  
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 50%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+.manage{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.btn-go{
+ padding: 2% 7% 2% 7%;
+ font-size: 20px;
+ border-radius: 10px;
+ outline: none;
+ border: none;
+ background-color: rgb(186, 106, 15);
+ cursor: pointer;
+}
+.btn-go:hover{
+  background-color:rgb(227, 114, 2) ;
+}
+.btn-go:active{
+  background-color: rgb(194, 76, 29);
+  color: black;
+}
